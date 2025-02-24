@@ -11,11 +11,11 @@ const fetchUserData = async () => {
 
         const userList = document.createElement("ul");
 
-        for (let user of users) {
+        users.forEach(user => {
             const listItem = document.createElement("li");
-            listItem.textContent = user.name;
+            listItem.textContent = user.name
             userList.appendChild(listItem);
-        }
+        });
 
         dataContainer.appendChild(userList);
         
