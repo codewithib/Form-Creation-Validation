@@ -8,7 +8,6 @@ const fetchUserData = async () => {
     try {
         const response = await fetch(apiUrl);
         const users = await response.json();
-        console.log(users);
 
         dataContainer.innerHTML = "";
 
